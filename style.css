@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8fafc;
+  color: #111827;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 14px;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.color-input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.color-input label {
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.color-input input[type="text"] {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.preview-section {
+  margin: 20px 0;
+}
+
+.preview-box {
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  text-align: center;
+}
+
+.results-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.contrast-info {
+  background: #e5e7eb;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#contrastRatio {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.pass {
+  background-color: #22c55e;
+  color: white;
+}
+
+.fail {
+  background-color: #ef4444;
+  color: white;
+}
+
+.clear-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .input-section {
+    flex-direction: column;
+  }
+}

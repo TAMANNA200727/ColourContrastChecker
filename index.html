@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Contrast Checker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Color Contrast Checker</h1>
+      <p>Check if your text and background color combinations meet WCAG standards.</p>
+    </header>
+
+    <section class="input-section">
+      <div class="color-input">
+        <label for="fgColor">Text Color</label>
+        <input type="color" id="fgColor" value="#000000" />
+        <input type="text" id="fgHex" value="#000000" />
+      </div>
+      <div class="color-input">
+        <label for="bgColor">Background Color</label>
+        <input type="color" id="bgColor" value="#ffffff" />
+        <input type="text" id="bgHex" value="#ffffff" />
+      </div>
+    </section>
+
+    <section class="preview-section">
+      <div id="preview" class="preview-box">Sample Text Preview</div>
+    </section>
+
+    <section class="results-section">
+      <div class="contrast-info">
+        <p><strong>Contrast Ratio:</strong> <span id="contrastRatio">--</span></p>
+        <div id="wcagResults" class="tags"></div>
+      </div>
+      <div class="guide">
+        <p><strong>WCAG Reference:</strong></p>
+        <ul>
+          <li>AA Normal Text: 4.5:1</li>
+          <li>AA Large Text: 3.0:1</li>
+          <li>AAA Normal Text: 7.0:1</li>
+          <li>AAA Large Text: 4.5:1</li>
+        </ul>
+      </div>
+    </section>
+
+    <button id="clearBtn" class="clear-btn">Clear</button>
+
+    <footer>
+      <p>Built by Tamanna</p>
+    </footer>
+  </main>
+
+  <script src="lib/contrast-utils.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
